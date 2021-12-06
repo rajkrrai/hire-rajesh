@@ -21,7 +21,7 @@ function App() {
               <ul className="navLinks">
                 <li>
                   <NavLink
-                    to="/"
+                    to="/home"
                     exact="true"
                     activeClassName="active"
                     className="nav-link-items"
