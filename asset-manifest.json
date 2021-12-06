@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/hire-rajesh/static/css/main.84597d19.chunk.css",
+    "main.js": "/hire-rajesh/static/js/main.17e6a45a.chunk.js",
+    "main.js.map": "/hire-rajesh/static/js/main.17e6a45a.chunk.js.map",
+    "runtime-main.js": "/hire-rajesh/static/js/runtime-main.19c4cea3.js",
+    "runtime-main.js.map": "/hire-rajesh/static/js/runtime-main.19c4cea3.js.map",
+    "static/js/2.a0db4e90.chunk.js": "/hire-rajesh/static/js/2.a0db4e90.chunk.js",
+    "static/js/2.a0db4e90.chunk.js.map": "/hire-rajesh/static/js/2.a0db4e90.chunk.js.map",
+    "index.html": "/hire-rajesh/index.html",
+    "static/css/main.84597d19.chunk.css.map": "/hire-rajesh/static/css/main.84597d19.chunk.css.map",
+    "static/js/2.a0db4e90.chunk.js.LICENSE.txt": "/hire-rajesh/static/js/2.a0db4e90.chunk.js.LICENSE.txt",
+    "static/media/dav_logo.c6f51c95.png": "/hire-rajesh/static/media/dav_logo.c6f51c95.png",
+    "static/media/nitskm.07cdcd2d.svg": "/hire-rajesh/static/media/nitskm.07cdcd2d.svg",
+    "static/media/profpic1.0cf078e3.JPG": "/hire-rajesh/static/media/profpic1.0cf078e3.JPG",
+    "static/media/resume.66795771.pdf": "/hire-rajesh/static/media/resume.66795771.pdf",
+    "static/media/techm.0b8210f9.png": "/hire-rajesh/static/media/techm.0b8210f9.png",
+    "static/media/tefo2.f8254466.png": "/hire-rajesh/static/media/tefo2.f8254466.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.19c4cea3.js",
+    "static/js/2.a0db4e90.chunk.js",
+    "static/css/main.84597d19.chunk.css",
+    "static/js/main.17e6a45a.chunk.js"
+  ]
+}
