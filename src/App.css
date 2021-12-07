@@ -1,6 +1,9 @@
 /* ======== DEFAULT SETTINGS   ========== */
 :root {
-  --blueColor: #04013e;
+  --primaryColor: #140f2d;
+  --secondaryColor: #f49d37;
+  --tertiaryColor: #3f88c5;
+
   --lighBlueStrong: #023e8a;
   --lighBlueMedium: #0077b6;
   --lighBlueLight: #ade8f4;
@@ -64,6 +67,15 @@ blockquote {
   padding: 10px;
   margin-right: 12px;
 }
+.bg-section {
+  background: rgb(1, 1, 11);
+  background: linear-gradient(
+    90deg,
+    rgba(1, 1, 11, 0.9054972330729166) 0%,
+    rgba(5, 27, 191, 1) 100%
+  );
+  color: #fff;
+}
 /* ======== NAVBAR STARTS ========== */
 
 .intro-parent {
@@ -75,52 +87,72 @@ blockquote {
   padding: 60px 30px;
   gap: 40px;
 }
+
 nav {
   position: sticky;
   top: 0;
   padding: 0 80px;
-  background-color: var(--blacklight);
+  /* background-color: var(--blacklight); */
   z-index: 3;
   width: 100%;
 }
-.navbar-container {
+.navbar {
   display: flex;
+  position: relative;
   justify-content: space-between;
-  padding: 15px 20px;
   align-items: center;
-  margin: 0 auto;
 }
-.menubar {
-  padding: 15px 20px;
-  display: none !important;
+
+.brand-title {
+  font-size: 1.5rem;
+  margin: 0.5rem;
+  font-weight: 300;
 }
-.navLinks {
+
+.navbar-links {
+  height: 100%;
+}
+
+.navbar-links ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.2rem;
-}
-.navLinks li {
-  margin-right: 1.5rem;
-  padding: 10px 0;
-}
-.nav-link-items {
-  transition: all 0.5s;
-}
-.nav-link-items:link,
-.nav-link-items:visited {
-  color: rgb(54, 54, 54);
+  margin: 0;
+  padding: 0;
 }
 
-.nav-link-items:hover {
-  color: rgb(88, 88, 88);
-  border-bottom: 4px solid black;
-}
-.nav-link-items.active {
-  color: rgb(12, 167, 7);
-  border-bottom: 4px solid black;
+.navbar-links li {
+  list-style: none;
 }
 
+.navbar-links li a {
+  display: block;
+  text-decoration: none;
+
+  color: var(--primaryColor);
+  padding: 1rem;
+  font-size: 1.3rem;
+}
+
+.navbar-links li:hover {
+  background-color: #555;
+}
+
+.toggle-button {
+  position: absolute;
+  top: 0.75rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+
+.toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
 .lessThan {
   margin-right: 1rem;
 }
@@ -166,15 +198,16 @@ nav {
 .btn {
   font-size: 1.2rem;
   display: inline-block;
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px 15px;
   margin-top: 1rem;
   color: var(--blacklight);
-  background-color: var(--blueColor);
+  background-color: var(--tertiaryColor);
   transition: all 0.5s;
 }
 
 .btn:hover {
+  border: 1px solid var(--tertiaryColor);
   background-color: transparent;
   color: var(--blueColor);
 }
@@ -292,10 +325,7 @@ nav {
 /* ======== Work-ex ENDS ========== */
 
 /* ======== Skills Starts ========== */
-.bg-section {
-  /* background-color: var(--blacklight); */
-  background-color: #b8ddff;
-}
+
 .techIcon {
   margin-right: 10px;
 }
@@ -356,8 +386,9 @@ nav {
   width: 100%;
 }
 
+/* edu links */
 .wrapper > a {
-  color: #023e8a;
+  color: var(--secondaryColor);
 }
 .wrapper > a:hover {
   cursor: pointer;
