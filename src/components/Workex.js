@@ -3,7 +3,7 @@ import techmImg from "../assets/img/techm.png";
 import tefo2 from "../assets/img/tefo2.png";
 export const Workex = () => {
   return (
-    <section className="sec-section work-section">
+    <section className="sec-section work-section" id="workex">
       <h4 className="section-heading">
         <i className="fas fa-briefcase heading-icon"></i>
         Work Experience

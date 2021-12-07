@@ -2,7 +2,7 @@ import React from "react";
 
 export const Volunteer = () => {
   return (
-    <section className="sec-section skill-section">
+    <section className="sec-section skill-section" id="volunteer">
       <h4 className="section-heading">
         <i className="fas fa-handshake heading-icon"></i>
         Social Contributions

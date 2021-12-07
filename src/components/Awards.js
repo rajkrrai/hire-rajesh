@@ -2,7 +2,7 @@ import React from "react";
 
 export const Awards = () => {
   return (
-    <section className="sec-section awards-section">
+    <section className="sec-section awards-section" id="awards">
       <h4 className="section-heading">
         <i className="fas fa-medal heading-icon"></i>
         Achievements

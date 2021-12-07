@@ -1,5 +1,12 @@
 import "./App.css";
-import { BrowserRouter as Router, NavLink } from "react-router-dom";
+import "./Media.css";
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  NavLink,
+} from "react-router-dom";
+
 import Homepage from "./components/Homepage";
 import Workex from "./components/Workex";
 import Skills from "./components/Skills";
@@ -9,82 +16,60 @@ import Volunteer from "./components/Volunteer";
 function App() {
   return (
     <Router>
-      <div className="container">
-        <nav className="nav">
-          <div className="navbar-container">
-            <div className="name-tag">
-              <span className="lessThan">&lt;</span>
-              <span className="nameInNav">Rajeh Kumar</span>
-              <span className="grtThan">/&gt;</span>
-            </div>
-            <div className="navbar">
-              <ul className="navLinks">
-                <li>
-                  <NavLink
-                    to="/home"
-                    exact="true"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/workex"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Work-Ex
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/awards"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Awards
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/skills"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Skills
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/education"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Education
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink
-                    to="/volunteer"
-                    activeClassName="active"
-                    className="nav-link-items"
-                  >
-                    Volunteerships
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
+      <nav className="nav1">
+        <div className="navbar-container">
+          <div className="name-tag">
+            <span className="lessThan">&lt;</span>
+            <span className="nameInNav">Rajeh Kumar</span>
+            <span className="grtThan">/&gt;</span>
           </div>
-        </nav>
-        <Homepage />
-        <Workex />
-        <Skills />
-        <Awards />
-        <Education />
-        <Volunteer />
-      </div>
+          <div className="navbar">
+            <i className="fas fa-bars menubar"></i>
+            <ul className="navLinks">
+              <li>
+                <a href="/" exact="true" className="nav-link-items">
+                  Home
+                </a>
+              </li>
+              <li>
+                <a href="#workex" className="nav-link-items">
+                  Work-Ex
+                </a>
+              </li>
+              <li>
+                <a href="#awards" className="nav-link-items">
+                  Awards
+                </a>
+              </li>
+              <li>
+                <a href="#skills" className="nav-link-items">
+                  Skills
+                </a>
+              </li>
+              <li>
+                <a href="#education" className="nav-link-items">
+                  Education
+                </a>
+              </li>
+              <li>
+                <a href="#volunteer" className="nav-link-items">
+                  Volunteerships
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      {/* <Routes>
+          <Route path="/" element={Homepage}></Route>
+          <Route path="/workex" element={Workex}></Route>
+        </Routes> */}
+      <Homepage />
+      <Workex />
+      <Skills />
+      <Awards />
+      <Education />
+      <Volunteer />
     </Router>
   );
 }

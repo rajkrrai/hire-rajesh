@@ -34,7 +34,7 @@ a {
 
 .waves {
   grid-column: 1 / span 2;
-  display: inline;
+  display: inline-block;
   width: 100%;
   position: absolute;
   bottom: 0%;
@@ -50,7 +50,8 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   align-content: center;
   justify-items: center;
-  padding: 52px 80px;
+  margin: 50px 0;
+  padding: 30px 80px;
   column-gap: 40px;
   row-gap: 20px;
 }
@@ -71,11 +72,16 @@ blockquote {
   grid-template-columns: 1fr 1fr;
   align-content: center;
   justify-items: center;
-  padding: 52px 80px;
+  padding: 60px 30px;
   gap: 40px;
 }
 nav {
+  position: sticky;
+  top: 0;
   padding: 0 80px;
+  background-color: var(--blacklight);
+  z-index: 3;
+  width: 100%;
 }
 .navbar-container {
   display: flex;
@@ -83,6 +89,10 @@ nav {
   padding: 15px 20px;
   align-items: center;
   margin: 0 auto;
+}
+.menubar {
+  padding: 15px 20px;
+  display: none !important;
 }
 .navLinks {
   display: flex;
@@ -174,6 +184,7 @@ nav {
 /* ======== Work-ex STARTS ========== */
 .work-section {
   grid-template-rows: auto;
+  margin-top: 0px;
 }
 .section-heading {
   grid-column: 1 / span 2;
@@ -282,7 +293,8 @@ nav {
 
 /* ======== Skills Starts ========== */
 .bg-section {
-  background-color: var(--blacklight);
+  /* background-color: var(--blacklight); */
+  background-color: #b8ddff;
 }
 .techIcon {
   margin-right: 10px;
@@ -327,12 +339,10 @@ nav {
 .eduLogo {
   height: 90px;
   padding: 0 20px;
-  /* width: 100%; */
 }
 .eduLogo2 {
   height: 80px;
   padding: 0 20px;
-  /* width: 100%; */
 }
 .branch {
   text-transform: capitalize;

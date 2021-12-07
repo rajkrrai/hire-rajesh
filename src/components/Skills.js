@@ -2,7 +2,7 @@ import React from "react";
 
 export const Skills = () => {
   return (
-    <section className="sec-section bg-section">
+    <section className="sec-section bg-section" id="skills">
       <h4 className="section-heading">
         <i className="fas fa-tools heading-icon"></i>
         Skills

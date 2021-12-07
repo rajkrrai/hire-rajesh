@@ -4,7 +4,7 @@ import nitskmlogo from "../assets/img/nitskm.svg";
 export const Education = () => {
   return (
     <section className="sec-section bg-section">
-      <h4 className="section-heading">
+      <h4 className="section-heading" id="education">
         <i className="fas fa-user-graduate heading-icon"></i>
         Education
       </h4>

@@ -9,7 +9,7 @@ export const Homepage = () => {
       strings: [
         "Rajesh Kumar",
         "a Software Engineer",
-        "a full stack (MERN) developer",
+        "a MERN stack developer",
       ],
       typeSpeed: 60,
       backSpeed: 60,
@@ -31,7 +31,7 @@ export const Homepage = () => {
         </div>
         <div className="intro-content">
           <h4 className="hiText">Hi there,</h4>
-          <h3 className="">
+          <h3>
             I am <span id="animatedText">Rajesh Kumar</span>
           </h3>
           <p className="intro-text">
