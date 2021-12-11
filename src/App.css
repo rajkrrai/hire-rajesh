@@ -185,6 +185,8 @@ blockquote {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
+  width: 100%;
+  padding: 60px 0;
 }
 .SkillsOverlay {
   position: absolute;
@@ -464,7 +466,7 @@ blockquote {
 /* ======== Footer starts ========== */
 footer {
   margin-top: 50px;
-  padding: 0 30px 40px 0;
+  padding: 0 30px;
   background-color: #0077b6;
   color: var(--blacklight);
 }
