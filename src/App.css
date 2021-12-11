@@ -12,7 +12,9 @@
   --blackMedium: #868e96;
   --blacklight: #f1f3f5;
 
-  /* other pallete color */
+  --twitterColor: #1da1f2;
+  --linkedInColor: #2867b2;
+  --instaColor: #c13584;
 }
 
 * {
@@ -35,7 +37,7 @@ ul {
 }
 a {
   text-decoration: none;
-  color: var(--blackMedium);
+  /* color: var(--blackMedium); */
 }
 
 .waves {
@@ -175,11 +177,68 @@ blockquote {
 .intro-header {
   height: 100vh;
 }
+.profileSkillCard {
+  display: flex;
+  position: relative;
+  transition: all 0.6s ease;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+.SkillsOverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: all 0.5s ease;
+  background-color: rgba(6, 16, 92, 0.5);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 35px;
+  border-radius: 20px;
+}
+.SkillsOverlay h5 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
+.technology-wrapper-header {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  padding: 30px;
 
+  gap: 15px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.profileSkillCard:hover .profilePic {
+  opacity: 0.3;
+}
+.profileSkillCard:hover .SkillsOverlay {
+  opacity: 1;
+}
+/* .skillsCard:hover {
+  display: block;
+}
+.skilsPills {
+  font-size: 1rem;
+} */
 .profilePic {
-  height: 300px;
-  width: 300px;
+  width: 60%;
+  height: auto;
   border-radius: 50%;
+  /* position: relative; */
+  display: block;
 }
 #animatedText {
   color: rgb(192, 25, 3);
@@ -202,7 +261,7 @@ blockquote {
 .btn {
   font-size: 1.2rem;
   display: inline-block;
-  /* border: 1px solid black; */
+  border: 1px solid black;
   padding: 10px 15px;
   margin-top: 1rem;
   color: var(--blacklight);
@@ -347,6 +406,9 @@ blockquote {
   margin-right: 15px;
   margin-top: 15px;
 }
+/* #smallText {
+  font-size: 0.5rem;
+} */
 /* ======== Skills ENDS ========== */
 
 /* ======== Education Starts ========== */
@@ -398,3 +460,112 @@ blockquote {
   cursor: pointer;
 }
 /* ======== Education ENDS ========== */
+
+/* ======== Footer starts ========== */
+footer {
+  margin-top: 50px;
+  padding: 0 30px 40px 0;
+  background-color: #0077b6;
+  color: var(--blacklight);
+}
+.flexFooter {
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  padding: 25px 50px;
+  width: 50%;
+  margin: 0 auto;
+  box-shadow: 3px 4px 10px -3px rgb(0 0 0 / 44%);
+  transition: all 0.5s;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: wrap;
+}
+
+.footerSubtitle {
+  padding: 25px 0px;
+  width: 100%;
+  grid-column: 1/-1;
+  text-align: center;
+  font-size: 1rem;
+  word-spacing: 1.5px;
+  letter-spacing: 1px;
+  color: #0a024f;
+  font-weight: 500;
+}
+.contactBlock {
+  padding: 10px;
+}
+
+.contactBlock h4 {
+  margin-bottom: 20px;
+}
+/* .followHeading {
+  text-align: center;
+} */
+.contactList {
+  font-size: 1.2rem;
+}
+.contactListItems {
+  display: flex;
+  margin-bottom: 15px;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  color: #1da1f2;
+}
+.contactListItems i {
+  margin-right: 10px;
+  /* color: var(--blackMedium); */
+  color: currentColor;
+  font-size: 1rem;
+}
+
+.followList {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  transition: all 0.7 ease;
+}
+
+.followListItems {
+  padding-right: 15px;
+  font-size: 1.4rem;
+}
+.followListItems a > *,
+.contactListItems i {
+  transition: all 0.3s ease-in;
+  background-color: rgb(7, 31, 51);
+  color: #f0f0f0;
+  padding: 8px;
+  border-radius: 50%;
+  opacity: 0.7;
+}
+.footerAnchor {
+  transition: all 0.3s ease-in-out;
+}
+.footerAnchor:link,
+.footerAnchor:visited {
+  color: rgb(91, 179, 238);
+}
+.footerAnchor:hover,
+.footerAnchor:active {
+  color: #fff;
+}
+
+.linkedIn a i:hover {
+  color: var(--linkedInColor);
+  opacity: 1;
+  background-color: #fff;
+  /* opacity: 1; */
+}
+.twitter a i:hover {
+  color: var(--twitterColor);
+  opacity: 1;
+  background-color: #fff;
+}
+.instagram a i:hover {
+  color: var(--instaColor);
+  opacity: 1;
+  background-color: #fff;
+}
+/* ======== Footer ENDS ========== */

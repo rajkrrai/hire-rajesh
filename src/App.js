@@ -1,12 +1,7 @@
 import React, { useEffect } from "react";
 import "./App.css";
 import "./Media.css";
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  NavLink,
-} from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import Homepage from "./components/Homepage";
 import Workex from "./components/Workex";
@@ -14,6 +9,8 @@ import Skills from "./components/Skills";
 import Awards from "./components/Awards";
 import Education from "./components/Education";
 import Volunteer from "./components/Volunteer";
+import Footer from "./components/Footer";
+import Projects from "./components/Projects";
 function App() {
   useEffect(() => {
     const toggleButton = document.getElementsByClassName("toggle-button")[0];
@@ -23,11 +20,6 @@ function App() {
       navbarLinks.classList.toggle("active");
     });
   });
-  // const toggleMenu = () => {
-  //   console.log("menu clicked");
-  //   document.getElementById("nav-menulist").classList.toggle("show");
-  //   // document.getElementById("menuLink").style.display = "block";
-  // };
   return (
     <Router>
       <nav class="navbar container">
@@ -36,7 +28,7 @@ function App() {
           <span className="nameInNav">Rajeh Kumar</span>
           <span className="grtThan">/&gt;</span>
         </div>
-        <a href="#" class="toggle-button">
+        <a href="#!" class="toggle-button">
           <i className="fas fa-bars menubar"></i>
         </a>
         <div class="navbar-links">
@@ -48,7 +40,7 @@ function App() {
             </li>
             <li>
               <a href="#workex" className="nav-link-items">
-                Work-Ex
+                Work
               </a>
             </li>
             <li>
@@ -77,10 +69,12 @@ function App() {
 
       <Homepage />
       <Workex />
+      {/* <Projects /> */}
       <Skills />
       <Awards />
       <Education />
       <Volunteer />
+      <Footer />
     </Router>
   );
 }
