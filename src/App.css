@@ -26,7 +26,10 @@ body {
   font-family: "Roboto", sans-serif;
   font-size: 1.6rem;
 }
-
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
 ul {
   list-style: none;
 }
@@ -76,26 +79,26 @@ blockquote {
   );
   color: #fff;
 }
-/* ======== NAVBAR STARTS ========== */
-
 .intro-parent {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-content: center;
+  align-items: center;
   justify-items: center;
   padding: 60px 30px;
   gap: 40px;
 }
 
-nav {
+/* ======== NAVBAR STARTS ========== */
+
+/* nav {
   position: sticky;
   top: 0;
   padding: 0 80px;
-  /* background-color: var(--blacklight); */
   z-index: 3;
   width: 100%;
-}
+} */
+
 .navbar {
   display: flex;
   position: relative;
@@ -133,7 +136,7 @@ nav {
 }
 
 .navbar-links li:hover {
-  background-color: #555;
+  background-color: rgb(230, 229, 229);
 }
 
 .toggle-button {
@@ -161,8 +164,9 @@ nav {
 }
 .nameInNav {
   font-family: "Bonheur Royale", cursive;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-weight: bold;
+  color: var(--primaryColor);
 }
 
 /* ======== NAVBAR ENDS ========== */

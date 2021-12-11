@@ -30,7 +30,7 @@ function App() {
   // };
   return (
     <Router>
-      <nav class="navbar">
+      <nav class="navbar container">
         <div class="brand-title">
           <span className="lessThan">&lt;</span>
           <span className="nameInNav">Rajeh Kumar</span>
@@ -74,6 +74,7 @@ function App() {
           </ul>
         </div>
       </nav>
+
       <Homepage />
       <Workex />
       <Skills />

@@ -1,8 +1,16 @@
 @media screen and (max-width: 640px) {
   /* for navbar */
-
+  .container {
+    width: 90%;
+  }
+  .nameInNav {
+    font-family: "Bonheur Royale", cursive;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primaryColor);
+  }
   .navbar {
-    max-width: 640px;
+    max-width: 100%;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -98,7 +106,7 @@
     padding: 20px 20px;
   }
   .sec-section {
-    min-width: 640px;
+    min-width: 100%;
     grid-template-columns: 1fr;
     padding: 30px;
   }
