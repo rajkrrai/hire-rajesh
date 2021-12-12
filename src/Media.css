@@ -14,7 +14,10 @@
     flex-direction: column;
     align-items: flex-start;
   }
-
+  .SkillsOverlay {
+    padding: 0;
+    height: fit-content;
+  }
   .toggle-button {
     display: flex;
   }
@@ -48,14 +51,16 @@
   }
   .intro-parent {
     grid-template-columns: 1fr;
+    padding: 0;
+    gap: 0;
   }
   .waves {
     display: none !important;
   }
-  .profilePic {
+  /* .profilePic {
     height: 150px;
     width: 150px;
-  }
+  } */
   .hiText {
     font-size: 0.8rem;
     margin-bottom: 0.5rem;
@@ -67,6 +72,10 @@
   .intro-text {
     font-size: 1rem;
     word-spacing: 1.5px;
+    width: 100%;
+  }
+
+  .SkillsOverlay {
     width: 100%;
   }
   .workList {
@@ -98,7 +107,9 @@
   }
   .techmlogo,
   .teflogo {
-    height: 50px;
+    height: auto;
+    width: 45%;
+    margin: 0 auto;
   }
 
   .card {
@@ -150,5 +161,9 @@
   .branch,
   .grad-body {
     font-size: 0.8rem;
+  }
+
+  footer {
+    padding: 0;
   }
 }

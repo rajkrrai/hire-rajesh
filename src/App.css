@@ -185,7 +185,8 @@ blockquote {
   align-items: center;
   align-content: center;
   flex-wrap: wrap;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   padding: 60px 0;
 }
 .SkillsOverlay {
@@ -195,7 +196,7 @@ blockquote {
   left: 0;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 90%;
   opacity: 0;
   transition: all 0.5s ease;
   background-color: rgba(6, 16, 92, 0.5);
@@ -204,8 +205,9 @@ blockquote {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  padding: 35px;
+  padding: 30px;
   border-radius: 20px;
+  margin: 0 auto;
 }
 .SkillsOverlay h5 {
   text-align: center;
@@ -491,8 +493,15 @@ footer {
   font-size: 1rem;
   word-spacing: 1.5px;
   letter-spacing: 1px;
-  color: #0a024f;
+  /* color: #0a024f; */
+  color: #fff;
   font-weight: 500;
+}
+.fa-heart {
+  color: rgb(197, 10, 10);
+}
+.fa-mug-hot {
+  color: rgb(82, 37, 6);
 }
 .contactBlock {
   padding: 10px;

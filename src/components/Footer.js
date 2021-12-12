@@ -79,8 +79,8 @@ const Footer = () => {
       </div>
 
       <div className="footerSubtitle">
-        Made with <i className="far fa-heart"></i> and{" "}
-        <i className="fas fa-mug-hot"></i> by Rajesh
+        Made with <i className="fas fa-heart"></i> and{" "}
+        <i className="fas fa-mug-hot"></i> by Rajesh in Germany.
       </div>
     </footer>
   );
