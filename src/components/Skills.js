@@ -32,9 +32,9 @@ export const Skills = () => {
       </blockquote>
       {/* col-1 */}
       <div className="technology-wrapper">
-        {skills.map((skill) => {
+        {skills.map((skill, idx) => {
           return (
-            <div>
+            <div key={idx}>
               <i className="techIcon"></i>
               {skill}
             </div>

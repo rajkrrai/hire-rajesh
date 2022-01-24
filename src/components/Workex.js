@@ -70,9 +70,9 @@ export const Workex = () => {
           <div className="card-title">Lead Developer</div>
           <div className="card-body">
             <ul className="workList">
-              {LeadWorkex.map((item) => {
+              {LeadWorkex.map((item, idx) => {
                 return (
-                  <li className="workListItems">
+                  <li className="workListItems" key={idx}>
                     <i className="far fa-check-circle listLi"></i> <p>{item}</p>
                   </li>
                 );
